@@ -1,0 +1,235 @@
+/* Загальні стилі для контейнера з постами */
+.posts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стилі для окремого поста */
+.post {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.post h2 {
+    font-size: 20px;
+    color: #6c5ce7;
+    margin: 0 0 10px;
+}
+
+.post h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.post p strong {
+    color: #333;
+}
+
+.create-post-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Встановлюємо відступ зверху */
+    background-color: #6c5ce7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Стиль для кнопки при наведенні */
+.create-post-button:hover {
+    background-color: #5a4dc7;
+}
+
+/* Стилі для форми пошуку */
+.search-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Використовуємо flexbox для вирівнювання елементів */
+    align-items: center; /* Центруємо елементи по вертикалі */
+    gap: 10px; /* Додаємо відстань між елементами */
+}
+
+/* Стилі для інпуту пошуку */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 540px; /* Фіксована ширина в пікселях */
+    font-size: 16px;
+    height: 40px; /* Задаємо висоту */
+}
+
+/* Стилі для select (категорія) */
+.search-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px; /* Така сама висота, як у input */
+}
+#posts h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #6c5ce7;
+    padding-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.view-all-posts-button-container {
+    margin-top: 20px; /* Переміщає кнопку вниз */
+    text-align: left;
+   /* Відступ віднизу */
+
+}
+
+.view-all-posts-button {
+    background-color:  #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-all-posts-button:hover {
+    background-color: #2980b9;
+}
+
+/* Стилі для кнопки пошуку */
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px; /* Однакова висота */
+}
+
+.search-container button:hover {
+    background-color: #5a4dc7;
+}
+/* Стиль для повідомлення, якщо постів немає */
+.no-posts {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+}
+
+/* Стилі для кнопок лайків та дизлайків */
+.rating-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Стиль для лайка */
+.like-btn i {
+    color: green !important; /* Зелений для лайка */
+    font-size: 24px; /* Розмір іконки */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.like-btn:hover i {
+    transform: scale(1.1);
+}
+
+/* Стиль для дизлайка */
+.dislike-btn i {
+    color: red !important; /* Червоний для дизлайка */
+    font-size: 24px; /* Розмір іконки */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dislike-btn:hover i {
+    transform: scale(1.1);
+}
+
+/* Стилі для підрахунку лайків і дизлайків */
+span {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Стиль для кнопки лайку */
+button.like-btn {
+    background-color: #fff;
+    border: 1px solid #ccc; /* Легкий бордер для кнопки */
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Стиль для кнопки дизлайку */
+button.dislike-btn {
+    background-color: #fff;
+    border: 1px solid #ccc; /* Легкий бордер для кнопки */
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Стиль при наведенні на кнопки */
+button.like-btn:hover,
+button.dislike-btn:hover {
+    background-color: #f9f9f9; /* Легке затемнення при наведенні */
+}
+
+/* Стиль при натисканні на кнопки */
+button.like-btn:active,
+button.dislike-btn:active {
+    background-color: #f9f9f9; /* Трохи темніший колір при натисканні */
+}
+
+/* Стилі для аватарки користувача */
+.post-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+}

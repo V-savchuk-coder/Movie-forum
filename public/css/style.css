@@ -1,0 +1,152 @@
+/* Загальний стиль для форми */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стиль для інпутів та кнопок */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a4dc7;
+}
+
+/* Повідомлення про помилки */
+p {
+    color:blue;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Відступи внизу */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Стиль для контейнера dashboard */
+/* Стиль для контейнера dashboard */
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Висота контейнера для рівного розташування */
+}
+
+.dashboard-container h2 {
+    color: #333;
+}
+
+.dashboard-container p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Стиль для кнопок на dashboard */
+.dashboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.dashboard-button:hover {
+    background-color: #5a4dc7;
+}
+
+/* Стиль для кнопки Вийти */
+.logout-button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c; /* Червоний для кнопки виходу */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Стиль для посилання на профіль */
+.profile-link {
+    color: #6c5ce7;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.profile-link:hover {
+    color: #5a4dc7;
+}
+
+/* Стилізація для кнопки виходу */
+.logout-container {
+    display: flex;
+    justify-content: flex-start; /* Відштовхуємо кнопку від правого краю */
+    margin-top: auto; /* Додаємо відступ зверху, щоб кнопка була внизу */
+}

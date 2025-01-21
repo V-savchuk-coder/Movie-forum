@@ -1,0 +1,449 @@
+/* Стилі для контенту профілю */
+#profile-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Заголовки в профілі */
+#profile-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #6c5ce7;
+    padding-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.profile-heading {
+    text-align: center;  /* Відцентровує заголовок */
+    font-family: 'Arial', sans-serif;  /* Використовує шрифт Arial */
+    font-size: 2em;  /* Збільшує розмір шрифта */
+    font-weight: bold;  /* Виділяє текст жирним */
+    color: #333;  /* Колір тексту */
+}
+/* Абзаци в профілі */
+#profile-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Список постів в профілі */
+#profile-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#profile-info ul li {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+#profile-info ul li:hover {
+    background-color: #f0f0f0;
+}
+
+#profile-info ul li a {
+    font-size: 16px;
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+#profile-info ul li a:hover {
+    text-decoration: underline;
+}
+
+#profile-info ul li span {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Стилі для тексту при відсутності постів */
+#profile-info .no-posts {
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Адаптивність для маленьких екранів */
+@media (max-width: 768px) {
+    #profile-info {
+        padding: 15px;
+    }
+
+    #profile-info h3 {
+        font-size: 20px;
+    }
+
+    #profile-info p {
+        font-size: 14px;
+    }
+}
+
+/* Стилі для інпутів та кнопок */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6c5ce7;
+    background-color: #fff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5a4dc7;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Стилі для форми пошуку */
+.search-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-container form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-container input[type="text"],
+.search-container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-container input[type="text"]:focus,
+.search-container select:focus {
+    border-color: #6c5ce7;
+    background-color: #fff;
+    outline: none;
+}
+
+.search-container button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-container button:hover {
+    background-color: #5a4dc7;
+    transform: translateY(-2px);
+}
+
+.search-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Стилі для кнопок вкладок */
+.tabs {
+    display: flex;
+    justify-content: flex-end; /* Вирівнює кнопки справа */
+    gap: 10px; /* Відстань між кнопками */
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    font-size: 14px; /* Зменшення шрифту кнопок */
+    padding: 8px 15px; /* Зменшення відступів кнопок */
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #6c5ce7
+}
+
+.tab-button:hover {
+    background-color: #ddd; /* Колір фону при наведенні */
+    transform: translateY(-2px); /* Легке підняття кнопки */
+}
+
+.tab-button:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+/* Стилі для контенту вкладки */
+.tab-content {
+    display: none; /* Ховає вкладки за замовчуванням */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Відображення вкладки профілю за замовчуванням */
+#profile-info {
+    display: block;
+}
+
+/* Кнопка редагування поста */
+.edit-button {
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.edit-button:hover {
+    background-color: #5a4dc7;
+}
+
+/* Форма редагування поста */
+.edit-form {
+    display: none; /* Ховаємо форму за замовчуванням */
+    margin-top: 15px;
+}
+
+.edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.edit-form textarea:focus {
+    border-color: #6c5ce7;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Кнопка збереження змін */
+.save-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.save-button:hover {
+    background-color: #5a4dc7;
+    transform: translateY(-2px);
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Стилі для кнопок постів */
+.post-buttons {
+    display: flex;
+    justify-content: flex-end; /* Вирівнює кнопки справа */
+    gap: 10px; /* Відстань між кнопками */
+}
+
+/* Стиль для кнопки "Видалити" та "Змінити" */
+.post-button {
+    font-size: 14px;
+    padding: 3px 10px; /* Зменшено відступи кнопок */
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto; /* Ширина кнопки залежить від вмісту */
+    left: 15px; /* Розміщуємо кнопку зліва */
+}
+
+.post-button:hover {
+    background-color: #5a4dc7;
+    transform: translateY(-2px);
+}
+
+.post-button:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+/* Стиль для кнопки "Видалити" */
+.delete {
+    background-color: #e74c3c; /* Червоний фон для кнопки видалення */
+}
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Стиль для кнопки "Змінити" */
+.edit {
+    background-color: #5a4dc7; /* Жовтий фон для кнопки редагування */
+}
+
+.edit:hover {
+    background-color: #e67e22;
+}
+
+/* Контейнер для постів */
+ul {
+    list-style-type: none;  /* Вимикає маркери для списку */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Розміщує пости вертикально */
+    align-items: center;    /* Центрує пости по горизонталі */
+}
+
+/* Кожен пост */
+li {
+    width: 80%;             /* Встановлює ширину для постів */
+    max-width: 1600px;       /* Максимальна ширина */
+    margin: 10px 0;         /* Відступи між постами */
+    padding: 20px;
+    background-color: #f9f9f9;  /* Легкий фон для кожного поста */
+    border: 1px solid #ccc;     /* Лінія навколо поста */
+    border-radius: 8px;         /* Заокруглені кути */
+}
+
+/* Заголовок поста */
+li  {
+    text-align: center;  /* Відцентровує текст по горизонталі */
+    font-size: 24px;     /* Встановлює розмір шрифта */
+    font-family: 'Calibri', sans-serif;  /* Встановлює шрифт, можна замінити на будь-який */
+    font-weight: bold;   /* Додає жирність до тексту */ 
+    
+}
+
+/* Контейнер для кнопок */
+.post-buttons {
+    display: flex;
+    justify-content: left;  /* Центрує кнопки */
+    gap: 10px;                /* Між кнопками */
+}
+
+/* Кнопки */
+.post-button {
+    padding: 8px 16px;   /* Відступи всередині кнопок */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.post-button.edit {
+    background-color: #4CAF50;  /* Зелена кнопка */
+    color: white;
+    height: 40px;
+}
+
+.post-button.delete {
+    background-color: #f44336;  /* Червона кнопка */
+    color: white;
+    height: 40px;
+}
+
+textarea {
+    width: 100%;               /* Текстове поле на всю ширину */
+    height: 150px;             /* Висота текстового поля */
+    margin-bottom: 10px;       /* Відступ знизу */
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.avatar-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* щоб аватарка була на передньому плані */
+}
+
+.avatar {
+    width: 90px;  /* розмір аватарки */
+    height: 90px; /* розмір аватарки */
+    border-radius: 50%; /* округлені кути */
+    object-fit: cover; /* зберігає пропорції і обрізає зображення при необхідності */
+    border: 2px solid #fff; /* біла рамка навколо аватарки */
+}
